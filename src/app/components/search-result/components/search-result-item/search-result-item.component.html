@@ -1,0 +1,15 @@
+<div class="card flex-row flex-wrap">
+    <div class="card-header border-0">
+        <img class="card-header-image" src="{{dataItem.image_url}}" alt="{{dataItem.name}}">
+    </div>
+    <div class="card-block px-2">
+        <h4 class="card-title">{{dataItem.name}}</h4>
+        <div class="card-rating">
+            <alg-rating [starsCount]="dataItem.stars_count" [reviews]="dataItem.reviews_count"></alg-rating>
+        </div>
+        <div class="card-description">
+            <p class="card-text">{{dataItem.food_type}} | {{dataItem.area}} | {{dataItem.price_range}}</p>
+        </div>
+    </div>
+    <div class="w-100"></div>
+</div>

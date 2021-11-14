@@ -1,0 +1,21 @@
+<div class="row no-gutters filterbytype-container">
+    <div class="col-12 types-header">
+        <div class="types-header-title">
+            <h5>Cuisine/Food Type</h5>
+        </div>
+        <div class="types-header-reset">
+            <i *ngIf="isFilterEnabled()" (click)="resetFilter()" class="fa fa-times"></i>
+        </div>
+    </div>
+    <div *ngIf="types" class="col-12 types-list">
+        <div *ngFor="let type of types; let i = index" class="type-item" (click)="setFilter(type, i)"
+            [ngClass]="isSelected(i)?'selected':''">
+            <div class="type-item-name">
+                {{type.value}}
+            </div>
+            <div class="type-item-count">
+                {{type.count}}
+            </div>
+        </div>
+    </div>
+</div>

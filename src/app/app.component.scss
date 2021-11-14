@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: -webkit-image-set(url('../assets/graphics/background.png') 1x,
+      url('../assets/graphics/background_@2X.png') 2x);
+  background-image: image-set(url('../assets/graphics/background.png') 1x,
+      url('../assets/graphics/background_@2X.png') 2x);
+  background-repeat: repeat;
+}
+
+html {
+  flex: 1 1 auto;
+}
+
+body {
+  background-color: transparent;
+  min-height: 85vh;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+.container {
+  background-color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  height: 10vh;
+  background: #1C688E;
+  padding: 1rem 1.5rem;
+}
+
+.nav {
+  display: flex;
+  overflow: auto;
+  max-height: 80vh;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  border-right: 1px solid #E6E6E6;
+}
+
+.nav::-webkit-scrollbar,
+section::-webkit-scrollbar {
+  width: 1px;
+}
+
+.nav::-webkit-scrollbar-track,
+section::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

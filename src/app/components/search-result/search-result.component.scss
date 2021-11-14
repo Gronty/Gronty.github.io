@@ -1,0 +1,35 @@
+.search-result-container {
+  padding-top: 1rem;
+}
+
+.search-result-info {
+  font-size: 1.5rem;
+}
+
+.search-result-info-text {
+  border-bottom: 1px solid lightgrey;
+
+  span {
+    background-color: #FFFFFF;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+.search-result-actions {
+  padding-bottom: 1rem;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+}
+
+.search-result-actions-button {
+  color: grey;
+  font-weight: 500;
+  border: 1px solid lightgrey;
+  padding: 1rem 6rem;
+}
+
+.btn:focus {
+  box-shadow: none;
+}

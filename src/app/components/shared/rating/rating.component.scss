@@ -1,0 +1,41 @@
+.rating {
+  display: flex;
+  flex: 1 1 auto;
+  border-radius: 5px;
+  padding: 0.25rem 0.75rem;
+  
+  span {
+    width: 24px;
+  }
+
+  .fa {
+    color: #E1E1E1;
+    font-size: 1.5rem;
+  }
+
+  .fa-pos-absolute {
+    position: absolute;
+  }
+
+  .rating-color {
+    color: #FFAB66;
+  }
+
+  &.selected {
+    background-color: #2897C5;
+
+    .fa {
+      color: #FFFFFF;
+    }
+
+    .rating-color {
+      color: #FFAB66;
+    }
+  }
+}
+
+.rating-review-count {
+  color: #E1E1E1;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}

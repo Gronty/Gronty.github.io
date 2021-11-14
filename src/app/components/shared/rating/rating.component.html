@@ -1,0 +1,12 @@
+<div class="align-items-center">
+    <div class="rating" [ngClass]="selected?'selected':''">
+        <i *ngFor="let star of starsCountInteger|repeat" class="fa fa-star rating-color"></i>
+        <span *ngFor="let star of starsCountDecimal|repeat">
+            <i class="fa fa-star fa-pos-absolute"></i>
+            <i class="fa fa-star-half rating-color fa-pos-absolute"></i>
+        </span>
+        <i *ngFor="let starEmpty of starsEmpty|repeat" class="fa fa-star"></i>
+
+        <h5 *ngIf="reviews" class="rating-review-count">({{reviews}} reviews)</h5>
+    </div>
+</div>

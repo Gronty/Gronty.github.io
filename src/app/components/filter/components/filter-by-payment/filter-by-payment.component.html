@@ -1,0 +1,21 @@
+<div class="row no-gutters filterbypayment-container">
+    <div class="col-12 cards-header">
+        <div class="cards-header-title">
+            <h5>Payment Options</h5>
+        </div>
+        <div class="cards-header-reset">
+            <i *ngIf="isFilterEnabled()" (click)="resetFilter()" class="fa fa-times"></i>
+        </div>
+    </div>
+    <div *ngIf="availableCards" class="col-12 cards-list">
+        <div *ngFor="let card of availableCards; let i = index" class="card-item" (click)="setFilter(card, i)"
+            [ngClass]="isSelected(i)?'selected':''">
+            <div class="card-item-name">
+                {{card.name}}
+            </div>
+            <div class="card-item-icon">
+                <i class="fa" ngClass="{{card.icon}} fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.filterbypayment-container {
+  padding-bottom: 1.5rem;
+}
+
+.cards-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-header-reset {
+  color: #1C688E;
+}
+
+.cards-list {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
+  justify-content: space-between;
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+  .card-item-name {
+    color: #000000;
+  }
+
+  .card-item-icon {
+    color: #9A9A9A;
+  }
+
+  &.selected {
+    background-color: #2897C5;
+
+    .card-item-name,
+    .card-item-icon {
+      color: #FFFFFF;
+    }
+  }
+}

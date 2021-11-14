@@ -1,0 +1,13 @@
+<div class="search-result-container">
+    <div class="search-result-info">
+        <p class="search-result-info-text"><span><b>{{searchResults.count}} results found</b> in {{searchResults.ms |
+                toseconds }} seconds</span></p>
+    </div>
+    <div class="search-result-item-list">
+        <alg-search-result-item *ngFor="let res of searchResults.hits" [dataItem]="res"></alg-search-result-item>
+    </div>
+    <div class="search-result-actions">
+        <button *ngIf="displayShowMoreButton()" class="btn search-result-actions-button" (click)="showMore()">Show
+            More</button>
+    </div>
+</div>

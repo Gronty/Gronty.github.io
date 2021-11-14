@@ -1,0 +1,14 @@
+<div class="row no-gutters filterbyrating-container">
+    <div class="col-12 rating-header">
+        <div class="rating-header-title">
+            <h5>Rating</h5>
+        </div>
+        <div class="rating-header-reset">
+            <i *ngIf="isFilterEnabled()" (click)="resetFilter()" class="fa fa-times"></i>
+        </div>
+    </div>
+    <div class="col-12 rating-list">
+        <alg-rating *ngFor="let x of numberOfFilters|repeat; let i = index" [starsCount]="i" (click)="setFilter(i)"
+        [selected]="isSelected(i)"></alg-rating>
+    </div>    
+</div>
