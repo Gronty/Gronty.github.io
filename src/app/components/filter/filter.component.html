@@ -1,3 +1,15 @@
-<alg-filter-by-type></alg-filter-by-type>
-<alg-filter-by-rating></alg-filter-by-rating>
-<alg-filter-by-payment></alg-filter-by-payment>
+<div class="row no-gutters pb-3 d-block d-sm-none">
+    <div class="col-12">
+        <button class="btn btn-filter" type="button" data-bs-toggle="collapse"
+            data-bs-target="#filters" aria-controls="filters"
+            aria-expanded="true" aria-label="Toggle navigation">
+            Show Filters <i class="fa fa-filter"></i>
+        </button>
+    </div>
+</div>
+
+<div id="filters" class="collapse">
+    <alg-filter-by-type></alg-filter-by-type>
+    <alg-filter-by-rating></alg-filter-by-rating>
+    <alg-filter-by-payment></alg-filter-by-payment>
+</div>
