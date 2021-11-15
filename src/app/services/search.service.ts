@@ -18,7 +18,7 @@ export class SearchService {
   private ratingFilter: string = '';
   private paymentFilter: string = '';
 
-  private currentPage: number = 1;
+  private currentPage: number = 0;
   private dataSource = new BehaviorSubject(this.results);
 
   private currentLatLng = '';
