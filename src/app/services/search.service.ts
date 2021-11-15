@@ -101,7 +101,7 @@ export class SearchService {
   }
 
   private resetPage(): void {
-    this.currentPage = 1;
+    this.currentPage = 0;
   }
 
 }
